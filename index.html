@@ -1,30 +1,75 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | WebGL Test AR</title>
-    <script src="js/lib/aframe.min.js"></script>
-    <script src="js/lib/aframe-ar.js"></script>
-    <script src="Build/UnityLoader.js"></script>
-    <script src="js/app.js"></script>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>For Khang 💖</title>
+  <style>
+    body {
+      background-color: #fff0f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: "Segoe UI", sans-serif;
+      color: #d6336c;
+      text-align: center;
+    }
 
-  </head>
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
 
-  <body style="margin: 0px; overflow: hidden;">
-    <a-scene embedded arjs vr-mode-ui="enabled: false" copycanvas>
-      <div id="unityContainer" style="z-index: 2" ></div>
-      <!-- <a-marker preset="hiro"> <a-box></a-box> </a-marker> -->
-      <!-- <a-marker type="pattern" url="data/markers/pattern-arjs.patt"><a-box></a-box></a-marker> -->
-      <!-- <a-marker type="pattern" url="data/markers/test.patt" markercontroller="name : hiro"></a-marker> -->
+    .heart {
+      font-size: 4rem;
+      animation: heartbeat 1s infinite;
+    }
 
-			<a-marker type="pattern" url="data/markers\Hiro.patt" markercontroller="name : Hiro"></a-marker>
-			<a-marker type="pattern" url="data/markers\Nutty.patt" markercontroller="name : Nutty"></a-marker>
-			<a-marker type="pattern" url="data/markers\NuttyCardboard.patt" markercontroller="name : NuttyCardboard"></a-marker>
-			<a-marker type="pattern" url="data/markers\pattern-pusheen01.patt" markercontroller="name : pattern-pusheen01"></a-marker>
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.3); }
+    }
 
-      <a-entity camera cameratransform></a-entity>
-    </a-scene>
-  </body>
+    .btn {
+      margin-top: 1.5rem;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      background-color: #ff6b81;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #ff4757;
+    }
+
+    iframe {
+      margin-top: 1rem;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <h1>谢谢 khang 的 dedication，<br>我们一起努力吧！</h1>
+  <div class="heart">💖</div>
+
+  <!-- Apple Music embed preview -->
+  <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%; max-width:660px; overflow:hidden; background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/my/album/%E6%88%91%E9%82%84%E7%B9%9E%E8%91%97%E4%BD%A0%E5%9C%A8%E6%97%8B%E8%BD%89/1613887529?i=1613887535"></iframe>
+
+  <!-- External link -->
+  <a class="btn" href="https://music.apple.com/my/album/%E6%88%91%E9%82%84%E7%B9%9E%E8%91%97%E4%BD%A0%E5%9C%A8%E6%97%8B%E8%BD%89/1613887529?i=1613887535" target="_blank">
+    去 Apple Music 听完整版 🎵
+  </a>
+
+  <script>
+    window.onload = function () {
+      alert("💖 khang，谢谢你的dedication，我们一起努力吧！");
+    };
+  </script>
+</body>
 </html>
